@@ -41,15 +41,15 @@ const Navbar = () => {
   }, []);
 
   return (
-    <div
-      className={`fixed top-0 left-0 z-50 w-full backdrop-blur-2xl py-3 px-4 sm:px-8 md:px-16 lg:px-32 xl:px-56 flex justify-between items-center transition-transform duration-300 ease-in-out ${
+   <div
+      className={`fixed top-0 left-0 z-50 w-full backdrop-blur-lg py-2 px-4 sm:px-6 md:px-8 lg:px-12 flex justify-between items-center transition-transform duration-300 ease-in-out ${
         showNavbar ? 'translate-y-0' : '-translate-y-full'
       }`}
     >
       <img
         src={assets.logo}
         alt="logo"
-        className="w-24 sm:w-36 md:w-44 lg:w-56 cursor-pointer transition-all duration-300"
+        className="w-20 sm:w-28 md:w-32 lg:w-36 cursor-pointer transition-all duration-300"
         onClick={() => navigate('/')}
       />
 
