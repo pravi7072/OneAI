@@ -42,14 +42,15 @@ const Navbar = () => {
 
   return (
    <div
-      className={`fixed top-0 left-0 z-50 w-full backdrop-blur-lg py-2 px-4 sm:px-6 md:px-8 lg:px-12 flex justify-between items-center transition-transform duration-300 ease-in-out ${
-        showNavbar ? 'translate-y-0' : '-translate-y-full'
-      }`}
-    >
+  className={`fixed top-0 left-0 z-50 w-full backdrop-blur-lg py-3 px-4 sm:px-6 md:px-8 flex justify-between items-center transition-transform duration-300 ease-in-out ${
+    showNavbar ? 'translate-y-0' : '-translate-y-full'
+  }`}
+>
+
       <img
         src={assets.logo}
-        alt="logo"
-        className="w-20 sm:w-28 md:w-32 lg:w-36 cursor-pointer transition-all duration-300"
+  alt="logo"
+  className="h-20 sm:h-12 md:h-12 w-17 cursor-pointer transition-all duration-300"
         onClick={() => navigate('/')}
       />
 
